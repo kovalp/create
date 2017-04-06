@@ -1,0 +1,23 @@
+/MPI_stubs.f90/5.2/Fri Feb 25 19:16:10 2005//
+/MPI_stuff.f90/5.2/Fri Feb 25 19:16:10 2005//
+/Makefile/5.2/Fri Feb 25 19:16:10 2005//
+/create.f/5.3/Mon Jun 27 22:23:09 2005//
+/exchange.inc/5.2/Fri Feb 25 19:16:10 2005//
+/parameters.inc/5.2/Fri Feb 25 19:16:10 2005//
+/pseudopotentials.inc/5.2/Fri Feb 25 19:16:10 2005//
+/quadrature.inc/5.2/Fri Feb 25 19:16:10 2005//
+/test.txt/5.2/Fri Feb 25 19:16:10 2005//
+/vnonneutral.inc/5.2/Fri Feb 25 19:16:10 2005//
+/wavefunctions.inc/5.2/Fri Feb 25 19:16:10 2005//
+D/EXCHANGE////
+D/EXX////
+D/FUTURE////
+D/GAUSS////
+D/INITIALIZERS////
+D/INTEGRALS////
+D/INTERPOLATERS////
+D/KINETIC////
+D/MACHINES////
+D/MODULES////
+D/READFILES////
+D/XC////

@@ -1,0 +1,14 @@
+#SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI SCRI
+ifneq (,$(findstring SCRI, ${MACHINE}))
+	F77 = pgf90
+	F90 = pgf90 -Mfreeform
+	OPTIMIZATION = -O2 -fast -tp athlon
+	LFLAGS =
+	ifneq (,$(findstring MPI, ${METHOD}))
+		LFLAGS =
+	endif
+	ifneq (,$(findstring MPICH, ${METHOD}))
+		F77 = /cluster/bin/mpif90
+		F90 = /cluster/bin/mpif90 -Mfreeform
+	endif
+endif

@@ -1,0 +1,15 @@
+this file is a test
+I hope it doesn't mess anything up!
+- Josh
+
+OK, this is edit #2 - so this line is new, everything else above is not
+
+Edit #3 - done by fireball-cvs3, with 'users' as primary group. We'll see what happens
+
+Edit #4 - done by fireball-cvs, with 'cvs' as primary group.
+Edit #5 - fireball-csv3, with 'cvs' set in CVSROOT/passwd
+
+Edit #6 - fireball-cvs2
+Set permissions in repository to 460, owner cvs.cvs
+because http://www.linuxmafia.com/faq/Devtools/cvs-lecture.html tells us
+that the owning user should only have read permissions. Perhaps when this file is checked back in it will retain the proper group ownership?

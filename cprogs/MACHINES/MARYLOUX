@@ -1,0 +1,14 @@
+#MARYLOUX MARYLOUX MARYLOUX MARYLOUX MARYLOUX MARYLOUX MARYLOUX MARYLOUX 
+ifneq (,$(findstring MARYLOUX, ${MACHINE}))
+	F77 = pgf90
+	F90 = pgf90 -Mfreeform
+	OPTIMIZATION = -O2 -fast -tp p6
+	LFLAGS =
+	ifneq (,$(findstring MPI, ${METHOD}))
+		LFLAGS =
+	endif
+	ifneq (,$(findstring MPICH, ${METHOD}))
+		F77 = mpif90
+		F90 = mpif90 -Mfreeform
+	endif
+endif

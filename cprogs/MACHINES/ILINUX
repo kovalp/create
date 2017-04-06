@@ -1,0 +1,9 @@
+#MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX MLINUX
+ifneq (,$(findstring ILINUX, ${MACHINE}))
+	F77 = ifort
+	F90 = ifort
+	OPTIMIZATION = -O2 -fno-alias -unroll -no-ipo -static
+	ifneq (,$(findstring TRUE, ${DEBUG}))
+		OPTIMIZATION = -g -check all  -no-ipo
+	endif
+endif

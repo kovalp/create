@@ -1,0 +1,14 @@
+#TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 TRU64 ATRU64 TRU64
+	ifneq (,$(findstring TRU64, ${MACHINE}))
+		F77 = f90 -automatic -error_limit 0
+		F90 = f90 -automatic -error_limit 0
+		OPTIMIZATION = -arch ev67 -O4 -assume noaccuracy_sensitive \
+				-math_library fast -align all -tune ev67
+	ifneq (,$(findstring MPI, ${METHOD}))
+		LFLAGS = -lmpi
+	endif
+	ifneq (,$(findstring MPICH, ${METHOD}))
+		F77 = mpif90
+		F90 = mpif90
+	endif
+endif

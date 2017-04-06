@@ -1,0 +1,16 @@
+#SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI SGI
+	ifneq (,$(findstring SGI, ${MACHINE}))
+		F77 = f90 -fixedform
+		F90 = f90 -freeform
+		OPTIMIZATION = -O3 -64 -OPT:IEEE_arithmetic=3,roundoff=3 \
+				-IPA:alias=ON,use_intrinsic=ON,addressing=ON
+		LFLAGS = -Wl,-woff,136 -Wl,-woff,134 -Wl,-woff,84 -Wl,-woff,85 -lfastm
+	ifneq (,$(findstring MPI, ${METHOD}))
+		LFLAGS = -Wl,-woff,136 -lmpi
+	endif
+	ifneq (,$(findstring MPICH, ${METHOD}))
+		LFLAGS = -Wl,-woff,136
+		F77 = mpif90 -fixedform
+		F90 = mpif90 -freeform
+	endif
+endif

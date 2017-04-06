@@ -1,0 +1,14 @@
+#HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON HUDSON
+ifneq (,$(findstring HUDSON, ${MACHINE}))
+	F77 = pgf90
+	F90 = pgf90 -Mfreeform
+	OPTIMIZATION = -O2 -fast
+	LFLAGS =
+	ifneq (,$(findstring MPI, ${METHOD}))
+		LFLAGS =
+	endif
+	ifneq (,$(findstring MPICH, ${METHOD}))
+		F77 = /usr/local/mpich-1.2.3/bin/mpif90
+		F90 = /usr/local/mpich-1.2.3/bin/mpif90 -Mfreeform
+	endif
+endif

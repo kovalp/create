@@ -1,0 +1,16 @@
+1           ! itest
+1           ! iharris 
+1           ! idogs
+0           ! ihubbard
+0           ! ispin
+1           ! ixc_opt, option for SNXC and OLSXC
+0           ! ioomethod, Note B
+0, 4        ! igauss3C, accuracylevel (default = 3)
+!The last line of theory.input for create (total, 8 options)
+!
+!Note A: "1" means ON (This is usually the correct switch), "0" means
+off.
+!Note B: ioomethod is not ready to work now, will be fixed it later.
+!
+!
+!             HAO WANG Sep. 24, 2003, BYU
