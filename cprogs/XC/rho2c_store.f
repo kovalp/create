@@ -23,7 +23,8 @@
 !                         fireball@fermi.la.asu.edu
 
 !
-! RESTRICTED RIGHTS LEGEND
+! fireball-qmd is a free (GPLv3) open project.
+
 !
 ! Use, duplication, or disclosure of this software and its
 ! documentation by the Government is subject to restrictions

@@ -21,9 +21,10 @@
 !                  made possible by support from Motorola
 !                         fireball@fermi.la.asu.edu
 
-! RESTRICTED RIGHTS LEGEND
+! fireball-qmd is a free (GPLv3) open project.
+
 !
-! Use, duplication, or disclosure of this software and its documentation
+! This program is free software: you can redistribute it and/or modify
 ! by the Government is subject to restrictions as set forth in
 ! subdivsion { (b) (3) (ii) } of the Rights in Technical Data and
 ! Computer Software clause at 52.227-7013.
