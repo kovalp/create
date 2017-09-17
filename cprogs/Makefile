@@ -26,7 +26,7 @@
 # Computer Software clause at 52.227-7013.
 
 #Pick your machine type: AIX, AIX_CHPC, ICEBOX, SGI
-MACHINE = ILINUX
+MACHINE = GLINUX
 #Pick you parallel type: <blank for none>, MPI, MPICH
 METHOD = 
 #Define debug to turn on symbols and array checking: <blank for none>, TRUE
@@ -46,14 +46,16 @@ ifneq (,$(findstring MPI, ${METHOD}))
 	MPIFILE = MPI_stuff.o
 endif
 
-include MACHINES/AIX
-include MACHINES/HUDSON
-include MACHINES/LINUX
-include MACHINES/ILINUX
-include MACHINES/MARYLOUX
-include MACHINES/SCRI
-include MACHINES/SGI
-include MACHINES/TRU64
+#include MACHINES/AIX
+#include MACHINES/HUDSON
+#include MACHINES/LINUX
+#include MACHINES/ILINUX
+#include MACHINES/MARYLOUX
+#include MACHINES/SCRI
+#include MACHINES/SGI
+#include MACHINES/TRU64
+include MACHINES/GLINUX
+
 
 FFLAGS =  $(PARALLEL) $(OPTIMIZATION)
 
